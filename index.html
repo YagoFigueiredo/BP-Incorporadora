@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <title>Atendimento - BP Incorporadora</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -12,82 +12,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="container_geral">
+<body>
 
-    <div class="container_cabecalho">
+    
         <h1 class="cabeca">BP INCORPORADORA</h1>
         
-        <header class="cabecalho">
-              
-            <img class="imagem_cabecalho" src="img/logoBranca.png" alt="Logo da BP Incorporadora">
-            <h1 class="texto_cabecalho">ATENDIMENTO</h1>
+        <header class="container_cabecalho">
+         
+            <div class="cabecalho-1">
+                
+                <img class="imagem-cabecalho" src="img/logoBranca.png" alt="Logo da BP Incorporadora">
+                <h2 class="texto-atendimento">ATENDIMENTO</h2>
             
+            </div>
+
+            <div class="cabecalho-2">
+           
+                <h3 class="texto-cliente">CARO CLIENTE!</h3>
+            
+            </div>
+            
+            <div class="cabecalho-3">
+            
+                <p class="informativo"> de como o cliente deverá entrar em contato com a BP Incorporadora para solicitar atendimento de reparos pós.</p>
+           
+            </div>
+           
         </header>
-    </div>
+    
 
     <main>
         <section class="campo_formulario">
-        <div class="container_formulario">
-            <form class="container_forms">
+            <div class="container_formulario">
+                <form class="container_forms">
 
-                <h2 class="cabecalho_formulario">Cliente</h2>
+                    <h2 class="cabecalho_formulario">Solicitação</h2>
 
-                <ul class="formulario container-input ">
+                    <ul class="formulario container-input ">
                 
-                    <li class="container_cpf">
+                        <li class="container_cpf">
                         <!--<label class="label-cpf" for="nome">Nome</label>-->
-                        <p class="texto-input">Cpf</p>
-                        <input type=" texto" id="cpf" class="input-cpf input-campo" required placeholder="">       
-                    </li>
+                            <p class="texto-input">CPF</p>
+                            <input type=" texto" id="cpf" class="input-cpf input-campo" required placeholder="">       
+                        </li>
                     
-                    <li class="container_nome">
-                        <!--<label class="label-nome" for="nome">Nome</label>-->
-                        <p class="texto-input">Proprietário</p>
-                        <input type=" texto" id="nome" class="input-nome input-campo" required placeholder="">
-                    </li>
-                </ul>    
+                        <li class="container_nome">
+                            <!--<label class="label-nome" for="nome">Nome</label>-->
+                            <p class="texto-input">Proprietário</p>
+                            <input type=" texto" id="nome" class="input-nome input-campo" required placeholder="">
+                        </li>
+                    </ul>    
                   
 
-                <ul class="formulario container-input ">
-                    <li class="container_email">
-                        <!--<label class="label-email" for="nome">Nome</label>-->
-                        <p class="texto-input">Email</p>
-                        <input type="text" id="email" class="input-email input-campo" required placeholder="">
-                    </li>
+                    <ul class="formulario container-input ">
+                        <li class="container_email">
+                            <!--<label class="label-email" for="nome">Nome</label>-->
+                            <p class="texto-input">Email</p>
+                            <input type="email" id="email" class="input-email input-campo" required placeholder="">
+                        </li>
                 
-                    <li class="container_telefone">
-                        <!--<label class="label-email" for="nome">Nome</label>-->
-                        <p class="texto-input">Telefone</p>
-                        <input type="text" id="telefone" class="input-telefone input-campo" required placeholder="">
-                    </li>
+                        <li class="container_telefone">
+                            <!--<label class="label-email" for="nome">Nome</label>-->
+                            <p class="texto-input">Telefone</p>
+                            <input type="tel" id="telefone" class="input-telefone input-campo" required placeholder="">
+                        </li>
 
-                </ul>        
+                    </ul>        
                 
-                <ul class="formulario container-input ">
+                    <ul class="formulario container-input ">
                     
-                    <li class="container_bloco">
-                        <!--<label class="label-bloco" for="bloco">Bloco</label>-->
-                        <p class="texto-input">Bloco</p>
-                        <input type=" texto" id="bloco" class="input-bloco input-campo" required placeholder="">
-                    </li>  
+                        <li class="container_bloco">
+                            <!--<label class="label-bloco" for="bloco">Bloco</label>-->
+                            <p class="texto-input">Bloco</p>
+                            <input type=" texto" id="bloco" class="input-bloco input-campo" required placeholder="">
+                        </li>  
                     
-                    <li class="container_unidade">
-                        <!--<label class="label-apartamento" for="apartamento">Apartamento</label>-->
-                        <p class="texto-input">Unidade</p>
-                       <input type=" texto" id="unidade" class="input-unidade input-campo" required placeholder="">
-                    </li> 
+                        <li class="container_unidade">
+                            <!--<label class="label-apartamento" for="apartamento">Apartamento</label>-->
+                            <p class="texto-input">Unidade</p>
+                            <input type=" texto" id="unidade" class="input-unidade input-campo" required placeholder="">
+                        </li> 
 
-                    <li class="container_empreendimento">
-                         <!--<label class="label-empreendimento" for="apartamento">Apartamento</label>-->
-                         <p class="texto-input">Empreendimento</p>
-                         <input type=" texto" id="empreendimento" class="input-empreendimento input-campo" required placeholder="">
+                        <li class="container_empreendimento">
+                            <!--<label class="label-empreendimento" for="apartamento">Apartamento</label>-->
+                            <p class="texto-input">Empreendimento</p>
+                            <input type=" texto" id="empreendimento" class="input-empreendimento input-campo" required placeholder="">
 
 
-                    </li>
-                </ul>      
+                        </li>
+                    </ul>    
+                    <div class="container_opcoes">
+                        <fieldset class="container_suspenso">
+                            <legend class="caixa-suspensa">Qual horário prefere ser atendido?</legend>
+                                <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
+                                <option id="manhã">Manhã</option> <!--tag para as opções das listas suspensas-->
+                                <option id="tarde">Tarde</option>
+                            
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="container_suspenso"> <!-- Tag para grupos para dividir informações, substirui o div-->
+                            <legend class="caixa-suspensa">Como prefere o nosso contato?</legend> <!--Tag para grupo de capos, subistitui o p-->
+                                <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
+                                    <option id="manhã">Telefone</option> <!--tag para as opções das listas suspensas-->
+                                    <option id="tarde">whatsapp</option>
+                                    <option id="tarde">E-mail</option>
+                            
+                                </select>
+                            
+                        </fieldset> 
             
+                        
+                    </div> 
+
+                    <div class="texto-area">
+                        <label for="mensagem">Mensagem</label>
+				        <textarea cols="150" rows="8" id="mensagem" class="input-texto" required placeholder="Escreva sua mensagem aqui."></textarea>
+
+                    </div>
+                
             </form>
-        </div>   
+          </div>
         </section>
     </main>
 
