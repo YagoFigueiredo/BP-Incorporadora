@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"">
     <title>Atendimento - BP Incorporadora</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -19,24 +19,26 @@
         
         <header class="container_cabecalho">
          
-            <div class="cabecalho-1">
+            <div class="container-info-cabecalho">
+                <div class="cabecalho-1">
+                    
+                    <img class="imagem-cabecalho" src="img/logoBranca.png" alt="Logo da BP Incorporadora">
+                    <h2 class="texto-atendimento">ATENDIMENTO</h2>
                 
-                <img class="imagem-cabecalho" src="img/logoBranca.png" alt="Logo da BP Incorporadora">
-                <h2 class="texto-atendimento">ATENDIMENTO</h2>
+                </div>
             
-            </div>
-
-            <div class="cabecalho-2">
-           
-                <h3 class="texto-cliente">CARO CLIENTE!</h3>
-            
-            </div>
-            
-            <div class="cabecalho-3">
-            
-                <p class="informativo"> de como o cliente deverá entrar em contato com a BP Incorporadora para solicitar atendimento de reparos pós.</p>
-           
-            </div>
+                <div class="cabecalho-2">
+                
+                    <h3 class="texto-cliente">PREZADO CLIENTE!</h3>
+                
+                </div>
+                
+                <div class="cabecalho-3">
+                
+                    <p class="informativo"> Descrição como o cliente deverá entrar em contato com a BP Incorporadora para solicitar atendimento de reparos pós obra.</p>
+                
+                </div>
+            </div>    
            
         </header>
     
@@ -105,6 +107,7 @@
                         <fieldset class="container_suspenso">
                             <legend class="caixa-suspensa">Qual horário prefere ser atendido?</legend>
                                 <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
+                                    <option id="**">--Selecione--</option>
                                 <option id="manhã">Manhã</option> <!--tag para as opções das listas suspensas-->
                                 <option id="tarde">Tarde</option>
                             
@@ -114,6 +117,7 @@
                         <fieldset class="container_suspenso"> <!-- Tag para grupos para dividir informações, substirui o div-->
                             <legend class="caixa-suspensa">Como prefere o nosso contato?</legend> <!--Tag para grupo de capos, subistitui o p-->
                                 <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
+                                    <option id="**">--Selecione--</option>
                                     <option id="manhã">Telefone</option> <!--tag para as opções das listas suspensas-->
                                     <option id="tarde">whatsapp</option>
                                     <option id="tarde">E-mail</option>
@@ -121,18 +125,46 @@
                                 </select>
                             
                         </fieldset> 
+
+                  
+                    </div>                       
+                        
+                    
+                    <div class="container_suspenso">
+                        <legend class="caixa-suspensa">Classificação do Problema</legend>
+                        <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
+                            <option id="**">--Selecione--</option>
+                            <option id="**">Cerâmica</option> <!--tag para as opções das listas suspensas-->
+                            <option id="**">Porta</option>
+                            <option id="**">Pintura</option>
+                            <option id="**">Elétrica</option>
+                            <option id="**">Hidráulica</option>
+                            <option id="**">Infiltração</option>
+                            <option id="**">Fissura</option>
+                            <option id="**">Gás</option>
+                            <option id="**">Janela</option>
+                    
+                        </select>
+
+                    </div>
             
                         
-                    </div> 
+                    
 
                     <div class="texto-area">
-                        <label for="mensagem">Mensagem</label>
+                        
+                        <label class="nome-area" for="mensagem">Me conte mais sobre o problema!</label>
 				        <textarea cols="150" rows="8" id="mensagem" class="input-texto" required placeholder="Escreva sua mensagem aqui."></textarea>
 
                     </div>
-                
+
+                    <div class="container_botao">
+                    
+                        <input type="submit" value="Enviar Formulário" class="input-botao caixa-itens">
+                    
+                    </div>   
             </form>
-          </div>
+          
         </section>
     </main>
 
