@@ -19,8 +19,8 @@ body{
     font-weight: 400;
     box-sizing: border-box;
    
+   
 }
-
 
 
 
@@ -35,52 +35,75 @@ body{
     justify-content: center;
 }
 
-.cabecalho-1{
+.container_cabecalho{
     background-color: var(--azul-bp);
-    height: 13vh;
-    display: grid;
-    grid-template-columns: 20% 30% 30% 20% ;
-}
-
-.cabecalho-2{
-    background-color:#202e7c;
-    height: 6vh;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-}
-
-.cabecalho-3{
-    background-color:#2038be;
-    height: 23vh;
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
-}
-
-.imagem-cabecalho{
-    width: 35%;
-    grid-column-start: 2;
+    
     
 }
 
+.container-info-cabecalho{
+    width: 940px;
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 30% 20% 50%;
+}
+
+
+.cabecalho-1{
+    grid-row-start: 1;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+ 
+   
+    
+
+}
+
+.cabecalho-2{
+   
+    height: 8vh;
+   
+}
+
+.cabecalho-3{
+   
+    height: 27vh;
+      
+}
+
+.imagem-cabecalho{
+    width: 20vh;
+    align-self: center;
+   
+}
+
+
 .texto-atendimento{
-    color: var(--cinza-fundo);
+    color: var(--branco);
     font-size: 27px;
-    FONT
-    font-weight: 800;
+    font-weight: bolder;
     grid-column-start: 3;
+    align-self: center;
+    justify-self: end;
 
 }
 
 .texto-cliente{
-    color:var(--cinza-fundo);
+    color: var(--branco);
+    font-weight: bolder;
     grid-column-start: 2;
     font-size: 26px;
+    align-self: center;
     
 }
 
 .informativo{
-    color: var(--cinza-fundo);
+    color: var(--branco);
+    font-weight: lighter;
     grid-column-start: 2;
+    margin-top: 1em;
 }
 
 /*_________________________________*/
@@ -88,33 +111,40 @@ body{
 
 
 .campo_formulario{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
+    /*display: grid;
+    grid-template-columns: 20% 60% 20%;*/
     background-color: var(--cinza-fundo);
-    }
+    width: 940px;
+    max-width: 100%;
+    margin: auto;
+  }
 
 .container_formulario{
-    width: 100%;
-    height:100vh;
+    width: 940px;
+    max-width: 100%;
+
+    height:150vh;
     margin: 4em auto;
     background: #ffffff;
     margin-top: -5rem;
-    border-radius: 17px;
+    border-radius: 30px;
     -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
     -moz-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
     box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
-    grid-column-start: 2;
+
     
 }
 
 .container_formulario *{
     box-sizing: border-box;
+    width: auto;
 }
 
 .formulario{
     display: flex;
     padding: 1.5em 2em;
     padding-left: 3em;
+    margin: auto;
 
 }
 
@@ -122,6 +152,7 @@ body{
     font-size: 33px;
     padding: 1em 0 0 1.5em;
     font-weight: bolder;
+    margin: auto;
    
 }
 
@@ -134,15 +165,14 @@ body{
     -moz-box-shadow:    0px 1px 10px 0px rgba(40, 40, 40, 0.30);
     box-shadow:         0px 1px 10px 0px rgba(40, 40, 40, 0.30);
     grid-column-start: 2;
+    width: auto;
 }
+
 
 .input-campo:hover{
     border: none;
 }
 
-.input-campo{
-    border-color: aqua;
-}
 
 .container_nome, .container_telefone, .container_unidade, .container_empreendimento {
     margin-left: 2rem;
@@ -172,6 +202,7 @@ body{
     font-size: 14px;
     font-weight: 800;
     margin: 0 0 0.5em 0.4em;
+    width: auto;
 
 }
 
@@ -195,13 +226,21 @@ body{
     -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.62);
     -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.62);
     box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    width: auto;
     
+}
+
+.caixa-itens:hover{
+    transform: scale(1.1);
 }
 
 .input-contato{
     margin: 2em 0 0 3em;
-   
-	width: 30%;
+   width: auto;
+}
+
+option{
+    text-align: center;
 }
 
 legend{
@@ -214,20 +253,55 @@ legend{
 }
 
 .texto-area{
-    margin: 2em 0 0 3em;
+    margin: 3em 0 0 3em;
+    width: 120em;
+    border-radius: 15px;
+}
+
+
+
+
+.nome-area{
+     font-weight: bolder;
 }
 
 .input-texto{    
     display: block;
-	margin: 0 0 20px;
+	margin: 0.6em 0 20px;
 	padding: 10px 20px;
-	width: 30%;
+	width: 38%;
     border: solid 1px black;
+    
 }
 
 
+.container_categoria{
+    display: block;
+    width: auto;
+}
 
+.container_botao{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
 
+.input-botao:hover{
+    background-color: var(--verde);
+    transform: scale(1.05);
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.input-botao{
+
+    width: 12em;
+    height: 3em;
+    margin-top: 3em;
+    background-color: #122cc0;
+    color: var(--branco);
+
+}
 
 
 
