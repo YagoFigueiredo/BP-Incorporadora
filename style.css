@@ -18,6 +18,7 @@ body{
     font-family: var(--font);
     font-weight: 400;
     box-sizing: border-box;
+    height: 100vh;
    
    
 }
@@ -117,7 +118,7 @@ body{
 .container_formulario{
     width: 100%;
     max-width: 980px;
-    height:130vh;
+    height: 1080px;
     margin: 4em auto;
     background: #ffffff;
     margin-top: -5rem;
@@ -171,6 +172,7 @@ body{
 
 .container_nome, .container_telefone, .container_unidade, .container_empreendimento {
     margin-left: 2rem;
+  
 }
 
 .input-nome{
@@ -311,11 +313,6 @@ legend{
 
 
 
-
-
-
-
-
 /*---------------------- RODA PÉ ---------------------*/
 .container_rodape{
     background-color: var(--verde);
@@ -341,9 +338,12 @@ legend{
 
 
 
+/* responsividade dos breakingpoints(resolução)*/
 
+@media (max-width: 768px){
+  
 
-
+}
 
 
 
