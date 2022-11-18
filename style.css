@@ -156,6 +156,7 @@ body{
 
 
 .input-campo{
+    border: none;
     padding: 0 2em;
     height: 2.5em;
     border-radius: 15px;
@@ -226,7 +227,7 @@ body{
 }
 
 .caixa-itens{
-
+    border: none;
     border-radius: 8px;
     -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.62);
     -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.62);
@@ -268,7 +269,8 @@ legend{
      font-weight: bolder;
 }
 
-.input-texto{    
+.input-texto{
+    border: none;    
     display: block;
 	margin: 0.6em 0 20px;
 	padding: 10px 20px;
@@ -307,7 +309,7 @@ legend{
     margin-top: 3em;
     background-color: #122cc0;
     color: var(--branco);
-
+    border: none;
 }
 
 
