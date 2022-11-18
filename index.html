@@ -1,180 +1,545 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atendimento - BP Incorporadora</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
-</head>
+*{
+    padding: 0;
+    margin: 0;
+}
 
-<body>
+:root{
+    --font:'Montserrat';
+    --azul-bp: #19256b;
+    --texto-alt: #888787;
+    --verde: #236b19;
+    --marrom: #6b4b19;
+    --cinza-fundo: #f0f0f0;
+    --branco: #ffffff;
+}
+
+
+body{
+    font-family: var(--font);
+    font-weight: 400;
+   
+}
+
+
+
+
+.cabeca{
+    height: 25px;
+    background-color: var(--verde);
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_cabecalho{
+    background-color: var(--azul-bp);
+    
+}
+
+.container-info-cabecalho{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 30% 20% 50%;
+}
+
+
+.cabecalho-1{
+    grid-row-start: 1;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+.cabecalho-2{
+   
+    height: 8vh;
+   
+}
+
+.cabecalho-3{
+   
+    height: 27vh;
+      
+}
+
+.imagem-cabecalho{
+    width: 20vh;
+    align-self: center;
+   
+}
+
+
+.texto-atendimento{
+    color: var(--branco);
+    font-size: 27px;
+    font-weight: bolder;
+    grid-column-start: 3;
+    align-self: center;
+    justify-self: end;
+
+}
+
+.texto-cliente{
+    color: var(--branco);
+    font-weight: bolder;
+    grid-column-start: 2;
+    font-size: 26px;
+    align-self: center;
+    
+}
+
+.informativo{
+    color: var(--branco);
+    font-weight: lighter;
+    grid-column-start: 2;
+    margin-top: 1em;
+}
+
+/*_________________________________*/
+
+
+
+.campo_formulario{
+   
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+  }
+
+.container_formulario{
+    width: 100%;
+    max-width: 980px;
+    height: 1080px;
+    margin: 4em auto;
+    background: #ffffff;
+    margin-top: -5rem;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
 
     
-        <h1 class="cabeca">BP INCORPORADORA</h1>
-        
-        <header class="container_cabecalho">
-         
-            <div class="container-info-cabecalho">
-                <div class="cabecalho-1">
-                    
-                    <img class="imagem-cabecalho" src="img/logoBranca.png" alt="Logo da BP Incorporadora">
-                    <h2 class="texto-atendimento">ATENDIMENTO</h2>
-                
-                </div>
-            
-                <div class="cabecalho-2">
-                
-                    <h3 class="texto-cliente">PREZADO CLIENTE!</h3>
-                
-                </div>
-                
-                <div class="cabecalho-3">
-                
-                    <p class="informativo"> Descrição como o cliente deverá entrar em contato com a BP Incorporadora para solicitar atendimento de reparos pós obra.</p>
-                
-                </div>
-            </div>    
-           
-        </header>
+}
+
+.container_formulario *{
+    box-sizing: border-box;
+    width: auto;
+
+}
+
+
+.formulario{
+    display: flex;
+    padding: 1.5em 2em;
+    padding-left: 3em;
+    margin: auto;
+
+}
+
+.input-bl-un{
+    display: inline-flex;
+   
+}
+
+.cabecalho_formulario{
+    font-size: 33px;
+    padding: 1em 0 0 1.5em;
+    font-weight: bolder;
+    margin: auto;
+   
+}
+
+
+.input-campo{
+    border: none;
+    padding: 0 2em;
+    height: 2.5em;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(40, 40, 40, 0.30);
+    -moz-box-shadow:    0px 1px 10px 0px rgba(40, 40, 40, 0.30);
+    box-shadow:         0px 1px 10px 0px rgba(40, 40, 40, 0.30);
+    width: auto;
+}
+
+
+.input-campo:hover{
+    border: none;
+}
+
+
+.container_nome, .container_telefone, .container_unidade, .container_empreendimento {
+    margin-left: 2rem;
+  
+}
+
+.input-nome{
+    width: 30em;
+}
+
+.input-email{
+    width: 23em;
+}
+.input-bloco, .input-unidade{
+    width: 7em;
+    text-align: center;
+}
+
+.input-empreendimento{
+    width: 20em;
+}
+
+.container_cpf, .container_nome{
+    margin-top: 1.5em;
+}
+
+.texto-contato{
+    margin: 1.5em 0 0 3em;
+    color: #5e5e5e;
+    font-weight: 600;
+
+}
+
+.texto-input{
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 0 0.5em 0.4em;
+    width: auto;
+
+}
+
+.container_opcoes{
+    display: flex;
+
+}
+
+.container_suspenso{
+    margin: 2em 0 0 3em;
+}
+
+.caixa-suspensa{
+    font-weight: bolder;
+    margin: 0.8em 0;
+}
+
+.caixa-itens{
+    border: none;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    width: auto;
+    
+}
+
+.caixa-itens:hover{
+    transform: scale(1.1);
+}
+
+.input-contato{
+    margin: 2em 0 0 3em;
+   width: auto;
+}
+
+option{
+    text-align: center;
+}
+
+legend{
+    font-weight: bolder;
+}
+
+.item-contato{
+    display: block;
+    margin: 0.5em;
+}
+
+.texto-area{
+    margin: 3em 0 0 3em;
+
+    border-radius: 15px;
+}
+
+
+.nome-area{
+     font-weight: bolder;
+}
+
+.input-texto{
+    border: none;    
+    display: block;
+	margin: 0.6em 0 20px;
+	padding: 10px 20px;
+	width: 75%;
+    max-width: 980px;
+    border-radius: 13px;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    box-shadow:         0px 1px 6px 0px rgba(50, 50, 50, 0.62);
+    
+}
+
+
+.container_categoria{
+    display: block;
+    width: auto;
+}
+
+.container_botao{
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.input-botao:hover{
+    background-color: var(--verde);
+    transform: scale(1.05);
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.input-botao{
+
+    width: 12em;
+    height: 3em;
+    margin-top: 3em;
+    background-color: #122cc0;
+    color: var(--branco);
+    border: none;
+}
+
+
+
+
+
+
+
+/*---------------------- RODA PÉ ---------------------*/
+.container_rodape{
+    background-color: var(--verde);
+    
+  }
+
+.logo-rodape{
+    width: 12vh;
+    margin: 1em 0;
+}
+
+.logo-whatsapp{
+    width: 2.5vh;
+
+}
+
+.container_lista{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container_contato, .logo-whatsapp, .texto-whatsapp {
+    display: inline-flex;
+}
+
+.container_contato{
+    align-self: center;
+    padding-left: 2em;
+}
+
+.container_contato p{
+    vertical-align: super;
+}
+
+.texto-whatsapp{
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.container_texto{
+    font-size: 12px;
+    color: var(--cinza-fundo);
+    text-align: center;
+    padding: 0 0 1.5em 0;
+}
+
+.container_contato, .texto-whatsapp:hover{
+    padding-top: 0.7em;
+    transition: 0.5s all;
+    color: var(--cinza-fundo);
+}
+
+
+
+
+
+/* responsividade dos breakingpoints(resolução)*/
+
+@media (max-width: 844px){
+  body{
+    width: 100%;
+    margin: auto;
+  }
+
+  .cabeca{
+    font-size: 12px;
+  }
+
+  .container_formulario{
+    height: 1230px;
+  }
+
+  .container_cabecalho{
+    height: 41vh;
+  }
+
+  .container-info-cabecalho{
+    grid-template-rows: 25% 13% 62% ;
     
 
-    <main>
-        <section class="campo_formulario">
-            <div class="container_formulario">
-                <form class="container_forms">
+  }
+  .cabecalho-1{
+    display: flex;
 
-                    <h2 class="cabecalho_formulario">Solicitação</h2>
+  }
 
-                    <ul class="formulario container-input ">
-                
-                        <li class="container_cpf">
-                        <!--<label class="label-cpf" for="nome">Nome</label>-->
-                            <p class="texto-input">CPF</p>
-                            <input type=" texto" id="cpf" class="input-cpf input-campo" required placeholder="">       
-                        </li>
-                    
-                        <li class="container_nome">
-                            <!--<label class="label-nome" for="nome">Nome</label>-->
-                            <p class="texto-input">Proprietário</p>
-                            <input type=" texto" id="nome" class="input-nome input-campo" required placeholder="">
-                        </li>
-                    </ul>    
-                  
-                    <ul class="container-input">
-                        <P class="texto-contato">ATENÇÃO: Caso as informações de contato não estejam atualizadas<br>por favor atualize os dados de contato.</p>
-                    </ul>
-                    
-                    
-                    <ul class="formulario container-input ">
-                        <li class="container_email">
-                            <!--<label class="label-email" for="nome">Nome</label>-->
-                            <p class="texto-input">Email</p>
-                            <input type="email" id="email" class="input-email input-campo" required placeholder="">
-                        </li>
-                
-                        <li class="container_telefone">
-                            <!--<label class="label-email" for="nome">Nome</label>-->
-                            <p class="texto-input">Telefone</p>
-                            <input type="tel" id="telefone" class="input-telefone input-campo" required placeholder="">
-                        </li>
+  .cabecalho-2{
+   display: flex;
 
-                    </ul>        
-                
-                  
-                    <ul class="formulario container-input input-bl-un-em">
-                        
-                     <div class="input-bl-un">   
-                        <li class="container_bloco">
-                            <!--<label class="label-bloco" for="bloco">Bloco</label>-->
-                            <p class="texto-input">Bloco</p>
-                            <input type=" texto" id="bloco" class="input-bloco input-campo" required placeholder="">
-                        </li>  
-                    
-                        <li class="container_unidade">
-                            <!--<label class="label-apartamento" for="apartamento">Apartamento</label>-->
-                            <p class="texto-input">Unidade</p>
-                            <input type=" texto" id="unidade" class="input-unidade input-campo" required placeholder="">
-                        </li> 
-                    </div>    
+}
+
+.cabecalho-3{
+    display: flex;
+
+}
+
+.imagem-cabecalho{
+    width: 14vh;
+}
+
+.texto-atendimento{
+    font-size: 2vh;
+}
+
+.texto-cliente{
+    font-size: 2vh;
+    align-self: center;
+}
+
+.informativo{
+    font-size: 14px;
+}
+
+/*↓↓↓↓↓↓↓↓↓↓↓↓↓↓___FORMULÁRIO___↓↓↓↓↓↓↓↓↓↓↓↓↓*/
+
+.cabecalho_formulario{
+   font-size: 18px;
+    padding: 1em 1em;
+   text-align: center;
+}
+
+.formulario{
+    flex-direction: column;
+    padding: 0 0.4em;
+
+}
 
 
-                    
-                    
-                        <li class="container_empreendimento">
-                            <!--<label class="label-empreendimento" for="apartamento">Apartamento</label>-->
-                            <p class="texto-input">Empreendimento</p>
-                            <input type=" texto" id="empreendimento" class="input-empreendimento input-campo" required placeholder="">
-                    
+.input-cpf{
+    width: 100%;
 
-                        </li>
-                    </ul>    
-                    
-                    
-                    <div class="container_opcoes">
-                        <fieldset class="container_suspenso">
-                            <legend class="caixa-suspensa">Qual horário prefere ser atendido?</legend>
-                                <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
-                                    <option id="**">--Selecione--</option>
-                                <option id="manhã">Manhã</option> <!--tag para as opções das listas suspensas-->
-                                <option id="tarde">Tarde</option>
-                            
-                            </select>
-                        </fieldset>
+}
 
-                      
+.container_cpf{
+    margin: 1em;
 
-                  
-                    </div>                       
-                        
-                    
-                    <div class="container_suspenso">
-                        <legend class="caixa-suspensa">Classificação do Problema</legend>
-                        <select class="caixa-itens"> <!--Tag para dropbox, lista suspensa.-->
-                            <option id="**">--Selecione--</option>
-                            <option id="**">Cerâmica</option> <!--tag para as opções das listas suspensas-->
-                            <option id="**">Porta</option>
-                            <option id="**">Pintura</option>
-                            <option id="**">Elétrica</option>
-                            <option id="**">Hidráulica</option>
-                            <option id="**">Infiltração</option>
-                            <option id="**">Fissura</option>
-                            <option id="**">Gás</option>
-                            <option id="**">Janela</option>
-                    
-                        </select>
+}
 
-                    </div>
-            
-                        
-                    
+.container_nome{
+    margin: 0.5em 0 0 1em;
 
-                    <div class="texto-area">
-                        
-                        <label class="nome-area" for="mensagem">Me conte mais sobre o problema!</label>
-				        <textarea rows="7" cols="980" id="mensagem" class="input-texto" required placeholder="Escreva sua mensagem aqui."></textarea>
+}
 
-                    </div>
+.input-nome{
+    width: 95%;
+    padding: 0;
+}
 
-                    <div class="container_botao">
-                    
-                        <input type="submit" value="Enviar Formulário" class="input-botao caixa-itens">
-                    
-                    </div>   
-            </form>
-          
-        </section>
-    </main>
+.texto-contato{
+    margin: 2em 0 0 1.8em;
+    font-size: 0.8rem;
 
-</body>
+}
 
-<footer class="container_rodape">
-    <h2 class="cabecalho_rodape">BP INCORPORADORA</h2>
-    <p class="texto_rodape">Incorporadora LTDA</p>
-</footer>
+.container_email{
+    margin: 1.5em 0 0 1em;   
+}
 
-</html>
+.input-email{
+    width: 95%;
+}
+
+.container_telefone{
+    margin: 1.5em 0 0 1em;
+}
+
+.input-telefone{
+    width: 95%;
+}
+
+.input-bl-un{
+    justify-content: center;
+    margin: 1.5em;
+}
+
+.container_empreendimento {
+    margin: 1em 0 0 1em;
+
+}
+
+.input-empreendimento{
+    width: 95%;
+}
+
+.container_suspenso{
+    margin: 1.5em 0 0 1.5em;
+}
+
+.texto-area{
+    margin: 2em 0 0 1.5em; 
+}
+
+.input-texto{
+    width: 95%;
+}
+
+.input-botao:hover{
+    background-color: var(--verde);
+    transform: scale(1.0);
+    font-weight: bold;
+    transition: 0.5s all;
+}
+
+.logo-rodape{
+    width: 8vh;
+}
+
+.logo-whatsapp{
+    width: 2.2vh;
+}
+
+.texto-whatsapp{
+    font-size: 15px;
+}
+
+
+
+
+}
+
+
+/*-webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    box-shadow:         0px 2px 10px 0px rgba(50, 50, 50, 0.62);*/
