@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --font:'Montserrat';
+    --azul-bp: #19256b;
+    --texto-alt: #888787;
+    --verde: #236b19;
+    --marrom: #6b4b19;
+    --cinza-fundo: #f0f0f0;
+    --branco: #ffffff;
+}
+
+
+body{
+    font-family: var(--font);
+    background-color: var(--azul-bp);
+    
+}
+
+
+
+.cabeca{
+    height: 25px;
+    background-color: var(--verde);
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_cabecalho{
+    background-color: var(--azul-bp);
+    
+}
+
+.container-info-cabecalho{
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.imagem-cabecalho{
+    width: 20vh;
+    align-self: center;
+    justify-content: center;
+   
+}
+
+.container_mensagem{
+   background-color: #f0f0f0;
+    width: 90%;
+    max-width: 640px;
+    margin: auto;
+    height: 460px;
+   border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*_________RODA PÉ_________*/
+
+footer{
+    position: fixed;
+   
+   
+}
+
+.container_rodape{
+    background-color: var(--verde);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  
+   
+    
+  }
+
+.logo-rodape{
+    width: 12vh;
+    margin: 1em 0;
+}
+
+.logo-whatsapp{
+    width: 2.5vh;
+
+}
+
+.container_lista{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container_contato, .logo-whatsapp, .texto-whatsapp {
+    display: inline-flex;
+}
+
+.container_contato{
+    align-self: center;
+    padding-left: 2em;
+}
+
+.container_contato p{
+    vertical-align: super;
+}
+
+.texto-whatsapp{
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.container_texto{
+    font-size: 12px;
+    color: var(--cinza-fundo);
+    text-align: center;
+    padding: 0 0 1.5em 0;
+}
+
+.container_contato, .texto-whatsapp:hover{
+    padding-top: 0.7em;
+    transition: 0.5s all;
+    color: var(--cinza-fundo);
+}
