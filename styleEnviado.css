@@ -65,7 +65,27 @@ body{
    border-radius: 30px;
 }
 
+.notificacao{
+   display: flex;
+   flex-direction: column;
+   height: 460px;
+   align-items: center;
+   justify-content: center;
+   -webkit-box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow:    0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+    box-shadow:         0px 2px 10px 0px rgba(50, 50, 50, 0.62);
+}
 
+.texto-recebidos{
+    margin: 0 0 0.5em 0;
+    font-size: 26px;
+    font-weight: 800;
+
+}
+
+.texto-mensagem{
+    font-size: 20px;
+}
 
 
 
@@ -139,4 +159,30 @@ footer{
     padding-top: 0.7em;
     transition: 0.5s all;
     color: var(--cinza-fundo);
+}
+
+
+@media(max-width: 844px) {
+    
+    .cabeca{
+        font-size: 12px;
+    }
+ 
+
+.texto-recebidos{
+    font-size: 22px;
+}
+
+.texto-mensagem{
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
 }
