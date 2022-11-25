@@ -167,20 +167,25 @@ footer{
 }
 
 
-@media(max-width: 844px) {
+@media(max-width: 812px) {
     
 .cabeca{
     font-size: 12px;
 }
- 
+
+
 .container_cabecalho{
     -webkit-box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.62);
     -moz-box-shadow:    0px 5px 10px 0px rgba(50, 50, 50, 0.62);
     box-shadow:         0px 5px 10px 0px rgba(50, 50, 50, 0.62);
 }
 
+.notificacao{
+    height: 520px;
+}
+
 .texto-recebidos{
-    font-size: 22px;
+    font-size: 25.5px;
 }
 
 .texto-mensagem{
@@ -192,6 +197,5 @@ footer{
 
 
 
-
-
 }
+
