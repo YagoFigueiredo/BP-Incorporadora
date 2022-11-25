@@ -72,7 +72,7 @@ body{
 .notificacao{
    display: flex;
    flex-direction: column;
-   height: 525px;
+   height: 60vh;
    align-items: center;
    justify-content: center;
 
@@ -80,13 +80,13 @@ body{
 
 .texto-recebidos{
     margin: 0 0 0.5em 0;
-    font-size: 26px;
+    font-size: 3.5vh;
     font-weight: 800;
 
 }
 
 .texto-mensagem{
-    font-size: 20px;
+    font-size: 2.3vh;
 }
 
 .container_rodape{
@@ -181,7 +181,7 @@ footer{
 }
 
 .notificacao{
-    height: 520px;
+    height: 62.5vh;
 }
 
 .texto-recebidos{
