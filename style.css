@@ -58,6 +58,7 @@ body{
 .cabecalho-2{
    
     height: 8vh;
+    margin-top: 1em;
    
 }
 
@@ -90,6 +91,7 @@ body{
     grid-column-start: 2;
     font-size: 26px;
     align-self: center;
+   
     
 }
 
@@ -98,6 +100,13 @@ body{
     font-weight: lighter;
     grid-column-start: 2;
     margin-top: 1em;
+    line-height: 1.5em;
+
+}
+
+strong{
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 /*_________________________________*/
@@ -157,7 +166,7 @@ body{
 
 .input-campo{
     border: none;
-    padding: 0 2em;
+    padding: 0 1em;
     height: 2.5em;
     border-radius: 15px;
     -webkit-box-shadow: 0px 1px 10px 0px rgba(40, 40, 40, 0.30);
@@ -392,21 +401,25 @@ legend{
   }
 
   .container_cabecalho{
-    height: 41vh;
+    height: 54vh;
   }
 
   .container-info-cabecalho{
-    grid-template-rows: 25% 13% 62% ;
+    grid-template-rows: 22% 10% 68% ;
+
     
 
   }
   .cabecalho-1{
     display: flex;
+    height: 13vh;
 
   }
 
   .cabecalho-2{
    display: flex;
+   margin-top: 0;
+   height: 8vh;
 
 }
 
@@ -416,7 +429,7 @@ legend{
 }
 
 .imagem-cabecalho{
-    width: 14vh;
+    width: 13vh;
 }
 
 .texto-atendimento{
@@ -430,7 +443,11 @@ legend{
 
 .informativo{
     font-size: 14px;
+    line-height: 1.5em;
+    margin-top: 1.8em;
 }
+
+
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓___FORMULÁRIO___↓↓↓↓↓↓↓↓↓↓↓↓↓*/
 
@@ -464,7 +481,7 @@ legend{
 
 .input-nome{
     width: 95%;
-    padding: 0;
+    padding: 0 1em;
 }
 
 .texto-contato{
